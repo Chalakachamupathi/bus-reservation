@@ -1,0 +1,6 @@
+services:
+  bus:
+    build: ./bus-reservation
+    container_name: bus-reservation
+    ports:
+      - "8080:8080"
