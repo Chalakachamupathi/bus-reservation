@@ -41,7 +41,6 @@ public class ReservationServlet extends HttpServlet {
             out.put("seatIds", r.getSeatIds());
             out.put("origin", r.getOrigin().name());
             out.put("destination", r.getDestination().name());
-            out.put("direction", r.getDirection().name());
             out.put("totalPrice", r.getTotalPrice());
             resp.setStatus(HttpServletResponse.SC_CREATED);
             resp.setContentType("application/json");
